@@ -29,6 +29,22 @@ export const PersonalData = [
       "2017 – IT Officer Sirisia constituency during Mass voter Registration II.",
       "2019 - Registration Assistant (RA) at Huduma Namba mass registration, bisunu"      
     ],
-    education : "went to moi university bachelor of science (computer science)"
+    education : "went to moi university bachelor of science (computer science)",
+
+    referees : [
+      {
+        idno : 1,
+        name : "mr. newton",
+        title : "ict manager bungoma county hospital",
+        phone : '0728102214'
+      },
+      {
+        idno : 2,
+        name : "mr. david",
+        title : "deputy returning officer, sirisia sub-county",
+        phone : '0725078759'
+      }
+    ]
+    
 }
 ]

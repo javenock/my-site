@@ -7,7 +7,7 @@ import styled from 'styled-components';
 export default class Personal extends Component {
     render() {
 
-        const {id, title, name,box, tel, email, objective, qualifications,skills,experience,education} = this.props.personal;
+        const {id, title, name,box, tel, email, objective, qualifications,skills,experience,education, referees} = this.props.personal;
         return (
             <React.Fragment>
                 <div className="container">
@@ -45,7 +45,15 @@ export default class Personal extends Component {
                             <h3 className="text-capitalize text-title mt-3">education</h3>
                             <p className="text-capitalize">{education}</p>
                             <h3 className="text-capitalize text-title mt-3">referees</h3>
-
+                            {referees.map(ref=>{return (
+                                <div key={ref.idno} className="border-bottom 3px solid">
+                                        <h5>{ref.idno}.</h5>
+                                        <h3 className="text-capitalize">Name : {ref.name}</h3>
+                                        <p className="text-capitalize">Title : {ref.title}</p>
+                                        <p className="text-capitalize">Tel : <em>{ref.phone}</em></p>
+                                    </div>
+                           )
+                            })}
                         </div>  
                           
                         <div className="col-4 mx-auto col-sm-3 px-3 text-center">
@@ -53,6 +61,7 @@ export default class Personal extends Component {
                                 <i className="fab fa-github" />
                                 <p className="text-capitalize ml-2">github link</p>
                                 </a>
+                                
                         </div>                     
                     </div>
                 </div>
