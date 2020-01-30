@@ -17,10 +17,10 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/cv" component={Cv} />
         <Route path="/contacts" component={Contacts} />
-        <Route path='/cv-git' component={() => { 
+        {/* <Route path='/javenock-site.netlify.com/cv-git' component={() => {           
           window.location.href = 'https://github.com/javenock/'; 
           return null;
-        }}/>
+        }}/> */}
         <Route component={Default} />
       </Switch>      
       <Footer />
