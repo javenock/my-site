@@ -50,10 +50,8 @@ export default class Personal extends Component {
                           
                         <div className="col-4 mx-auto col-sm-3 px-3 text-center">
                             <a target="blank" href="https://github.com/javenock/">
-                            {/* <Link target='_blank' to="https://github.com/javenock/"> */}
                                 <i className="fab fa-github" />
                                 <p className="text-capitalize ml-2">github link</p>
-                                {/* </Link */}
                                 </a>
                         </div>                     
                     </div>
